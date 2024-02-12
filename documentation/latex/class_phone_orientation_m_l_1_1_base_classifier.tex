@@ -1,0 +1,90 @@
+\hypertarget{class_phone_orientation_m_l_1_1_base_classifier}{}\doxysection{Phone\+Orientation\+ML.\+Base\+Classifier Class Reference}
+\label{class_phone_orientation_m_l_1_1_base_classifier}\index{PhoneOrientationML.BaseClassifier@{PhoneOrientationML.BaseClassifier}}
+Inheritance diagram for Phone\+Orientation\+ML.\+Base\+Classifier\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_phone_orientation_m_l_1_1_base_classifier}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{class_phone_orientation_m_l_1_1_base_classifier_ae24bb778fb8da92ffd472b6035bc11c5}{train}} (String file\+Path)
+\item 
+abstract int \mbox{\hyperlink{class_phone_orientation_m_l_1_1_base_classifier_a459867feff0f72c5a72bd3a86d6e95c8}{predict}} (\mbox{\hyperlink{class_phone_orientation_m_l_1_1_point}{Point}} input\+Point)
+\item 
+void \mbox{\hyperlink{class_phone_orientation_m_l_1_1_base_classifier_ae30a1d5f33eea0a640c00b55ac58e335}{train\+Data\+Option}} (String file\+Path)
+\item 
+void \mbox{\hyperlink{class_phone_orientation_m_l_1_1_base_classifier_a6a7f5c32892eca2078bc1ff57f0fd90e}{unknown\+Data\+Option}} (String file\+Path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_phone_orientation_m_l_1_1_base_classifier_a459867feff0f72c5a72bd3a86d6e95c8}\label{class_phone_orientation_m_l_1_1_base_classifier_a459867feff0f72c5a72bd3a86d6e95c8}} 
+\index{PhoneOrientationML.BaseClassifier@{PhoneOrientationML.BaseClassifier}!predict@{predict}}
+\index{predict@{predict}!PhoneOrientationML.BaseClassifier@{PhoneOrientationML.BaseClassifier}}
+\doxysubsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily abstract int Phone\+Orientation\+ML.\+Base\+Classifier.\+predict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_phone_orientation_m_l_1_1_point}{Point}}}]{input\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Predict given the inputed point
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Point} & -\/ input unknown point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer value associated with orientation 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_phone_orientation_m_l_1_1_another_classifier_a97f3563ae914060fbd89da3d64e70506}{Phone\+Orientation\+ML.\+Another\+Classifier}}, and \mbox{\hyperlink{class_phone_orientation_m_l_1_1_n_n_classifier_a91737150ec8eacc30fc9452ed2b1f9fd}{Phone\+Orientation\+ML.\+NNClassifier}}.
+
+\mbox{\Hypertarget{class_phone_orientation_m_l_1_1_base_classifier_ae24bb778fb8da92ffd472b6035bc11c5}\label{class_phone_orientation_m_l_1_1_base_classifier_ae24bb778fb8da92ffd472b6035bc11c5}} 
+\index{PhoneOrientationML.BaseClassifier@{PhoneOrientationML.BaseClassifier}!train@{train}}
+\index{train@{train}!PhoneOrientationML.BaseClassifier@{PhoneOrientationML.BaseClassifier}}
+\doxysubsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily abstract void Phone\+Orientation\+ML.\+Base\+Classifier.\+train (\begin{DoxyParamCaption}\item[{String}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Training for the ML before predictions can occur
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & -\/ name of file with known data / knowledge base \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_phone_orientation_m_l_1_1_another_classifier_a33876ab22df6d31c74d06ba8669ef3dc}{Phone\+Orientation\+ML.\+Another\+Classifier}}, and \mbox{\hyperlink{class_phone_orientation_m_l_1_1_n_n_classifier_ab22a5b888045ca825046661a0ca46360}{Phone\+Orientation\+ML.\+NNClassifier}}.
+
+\mbox{\Hypertarget{class_phone_orientation_m_l_1_1_base_classifier_ae30a1d5f33eea0a640c00b55ac58e335}\label{class_phone_orientation_m_l_1_1_base_classifier_ae30a1d5f33eea0a640c00b55ac58e335}} 
+\index{PhoneOrientationML.BaseClassifier@{PhoneOrientationML.BaseClassifier}!trainDataOption@{trainDataOption}}
+\index{trainDataOption@{trainDataOption}!PhoneOrientationML.BaseClassifier@{PhoneOrientationML.BaseClassifier}}
+\doxysubsubsection{\texorpdfstring{trainDataOption()}{trainDataOption()}}
+{\footnotesize\ttfamily void Phone\+Orientation\+ML.\+Base\+Classifier.\+train\+Data\+Option (\begin{DoxyParamCaption}\item[{String}]{file\+Path }\end{DoxyParamCaption})}
+
+function to train classifier, notifies upon completion
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & -\/ path of the file containing training data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_phone_orientation_m_l_1_1_base_classifier_a6a7f5c32892eca2078bc1ff57f0fd90e}\label{class_phone_orientation_m_l_1_1_base_classifier_a6a7f5c32892eca2078bc1ff57f0fd90e}} 
+\index{PhoneOrientationML.BaseClassifier@{PhoneOrientationML.BaseClassifier}!unknownDataOption@{unknownDataOption}}
+\index{unknownDataOption@{unknownDataOption}!PhoneOrientationML.BaseClassifier@{PhoneOrientationML.BaseClassifier}}
+\doxysubsubsection{\texorpdfstring{unknownDataOption()}{unknownDataOption()}}
+{\footnotesize\ttfamily void Phone\+Orientation\+ML.\+Base\+Classifier.\+unknown\+Data\+Option (\begin{DoxyParamCaption}\item[{String}]{file\+Path }\end{DoxyParamCaption})}
+
+function for the unknown data file, prints out predictions
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & -\/ path of the file containing unknown data \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kalpm/eclipse-\/workspace/\+Group05-\/\+Assignment01-\/\+Kalp-\/\+Rudra-\/\+Girish-\/\+Jiya/src/\+Phone\+Orientation\+ML/Base\+Classifier.\+java\end{DoxyCompactItemize}
